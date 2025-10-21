@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# Spark checkpoints
+chk/
+
+# Airflow logs & DB
+airflow/logs/
+airflow/airflow.db
+
+# Local configs
+*.lock
+
+# requiremetns files
+requirements-lock.txt

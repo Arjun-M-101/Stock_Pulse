@@ -5,6 +5,7 @@ from pyspark.sql.types import (
     StructType, StructField, StringType,
     DoubleType, LongType, TimestampType
 )
+import os
 
 # 1. Spark session with Kafka + Postgres support
 spark = SparkSession.builder \
@@ -60,14 +61,17 @@ parquet_query = final_df.writeStream \
     .outputMode("append") \
     .start()
 
+user = os.getenv("PGUSER")
+password = os.getenv("PGPASSWORD")
+
 # 6b. Write to Postgres (via foreachBatch)
 def write_to_postgres(batch_df, batch_id):
     (batch_df.write
         .format("jdbc")
         .option("url", "jdbc:postgresql://localhost:5432/stocks")
         .option("dbtable", "ticks_raw")
-        .option("user", "postgres")
-        .option("password", "password")
+        .option("user", user)
+        .option("password", password)
         .option("driver", "org.postgresql.Driver")
         .mode("append")
         .save())

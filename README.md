@@ -244,20 +244,18 @@ Auto‑refreshes every 5 seconds for live updates.
 
 ### - Sample Outputs (Airflow + Dashboard)
 
-<p align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/0cce8da2-7318-4dc3-a82f-a679f45822a0" />
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/c80111e1-6c0b-4158-aa23-cf18a9e652e9" />
-</p>
-
-<p align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/ca5acd99-b439-4cad-a100-a7a28efdd5fe" />
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/256cce39-833a-41c7-a9a5-292f8d2d338b" />
-</p>
-
-<p align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/d8cad975-ca0e-42f7-8b99-2e20b8d1c693" />
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/45bcbe46-c149-49fb-ba1a-9b1dacb95542" />
-</p>
+<div>
+  <img src="https://github.com/user-attachments/assets/0cce8da2-7318-4dc3-a82f-a679f45822a0" width="48%"/>
+  <img src="https://github.com/user-attachments/assets/c80111e1-6c0b-4158-aa23-cf18a9e652e9" width="48%"/>
+</div>
+<div>
+  <img src="https://github.com/user-attachments/assets/ca5acd99-b439-4cad-a100-a7a28efdd5fe" width="48%"/>
+  <img src="https://github.com/user-attachments/assets/256cce39-833a-41c7-a9a5-292f8d2d338b" width="48%"/>
+</div>
+<div>
+  <img src="https://github.com/user-attachments/assets/d8cad975-ca0e-42f7-8b99-2e20b8d1c693" width="48%"/>
+  <img src="https://github.com/user-attachments/assets/45bcbe46-c149-49fb-ba1a-9b1dacb95542" width="48%"/>
+</div>
 
 ---
 

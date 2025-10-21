@@ -3,7 +3,7 @@ CREATE DATABASE stocks;
 
 \c stocks
 
--- if table exists but wrong schema
+-- if table exists
 DROP TABLE IF EXISTS ticks_raw;
 
 -- create fresh table

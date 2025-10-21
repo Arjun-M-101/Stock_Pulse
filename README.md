@@ -18,22 +18,7 @@ The pipeline ingests simulated stock index data, enriches it with derived metric
 
 ## 🏗️ Architecture
 
-```
-[ indexProcessed.csv ]
-        │
-        ▼
- [ Kafka Producer ]  --->  [ Kafka Topic: stock_ticks ]  --->  [ Spark Structured Streaming Consumer ]
-                                                                 │
-                                                                 ├──> [ Parquet Data Lake (partitioned by index/date) ]
-                                                                 │
-                                                                 └──> [ Postgres DB (ticks_raw table) ]
-                                                                                   │
-                                                                                   ▼
-                                                                       [ Airflow DAG Orchestration ]
-                                                                                   │
-                                                                                   ▼
-                                                                         [ Streamlit Dashboard ]
-```
+<img width="1304" height="649" alt="image" src="https://github.com/user-attachments/assets/6c5238d3-4b5f-4702-b350-16089c97813f" />
 
 ---
 

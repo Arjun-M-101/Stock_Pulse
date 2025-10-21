@@ -182,16 +182,28 @@ pip install -r requirements-lock.txt
 python producer/producer.py
 ```
 
-### Run Consumer (Spark)
+## ▶️ Running the Pipeline
+
+You have **two options** to run the Spark consumer:
+
+### **Option A: Run Consumer Manually**
 ```bash
 $SPARK_HOME/bin/spark-submit \
   --master local[*] \
   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.4.1,org.postgresql:postgresql:42.7.4 \
   consumer/consumer.py
 ```
+- Best for quick local testing and debugging.  
+- Logs appear in the terminal.  
 
-### Trigger Airflow DAG
-In Airflow UI → enable and trigger `stockpulse_pipeline`.
+---
+
+### **Option B: Orchestrate via Airflow DAG**
+- Open Airflow UI → enable `stockpulse_pipeline`.  
+- Trigger the DAG to run the same `spark-submit` job as a scheduled/managed task.  
+- Best for repeatable runs, retries, and monitoring.  
+
+---
 
 ### Launch Dashboard
 ```bash

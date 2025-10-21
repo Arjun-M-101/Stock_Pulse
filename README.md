@@ -29,13 +29,10 @@ The pipeline ingests simulated stock index data, enriches it with derived metric
                                                                  └──> [ Postgres DB (ticks_raw table) ]
                                                                                    │
                                                                                    ▼
-                                                                       [ Streamlit Dashboard ]
+                                                                       [ Airflow DAG Orchestration ]
                                                                                    │
                                                                                    ▼
-                                                                         Interactive Visuals
-                                                                                   │
-                                                                                   ▼
-                                                                         [ Airflow DAG Orchestration ]
+                                                                         [ Streamlit Dashboard ]
 ```
 
 ---

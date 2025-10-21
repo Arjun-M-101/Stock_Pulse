@@ -11,6 +11,8 @@ chk/
 # Airflow logs & DB
 airflow/logs/
 airflow/airflow.db
+airflow/airflow.cfg
+airflow/simple_ath_mananger_passwords.json.generated
 
 # Local configs
 *.lock
